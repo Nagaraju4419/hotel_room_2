@@ -85,7 +85,7 @@ public class RoomJpaService implements RoomRepository {
     }
 
     @Override
-    Hotel getRoomHotel(int roomId) {
+    public Hotel getRoomHotel(int roomId) {
         try {
             Room room = roomJpaRepository.findById(roomId).get();
             Hotel hotel = room.getHotel();

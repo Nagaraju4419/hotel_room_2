@@ -17,6 +17,7 @@ public class Hotel {
     private String location;
     @Column(name = "rating")
     private int rating;
+    @OneToMany(mappedBy = "hotel")
     private Room room;
 
     public Hotel() {
